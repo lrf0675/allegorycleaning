@@ -1,0 +1,50 @@
+@import 'sprite';
+
+.icn-home {
+  @include sprite($spr-nav-home);
+}
+.icn-about {
+  @include sprite($spr-nav-building);
+}
+.icn-services {
+  @include sprite($spr-nav-cleaner);  
+}
+.icn-contact {
+  @include sprite($spr-nav-phone);
+}
+.icn-calendar {
+  @include sprite($spr-nav-calendar);
+}
+.icn-homesearch {
+  @include sprite($spr-feat-homesearch);
+}
+.icn-cards {
+  @include sprite($spr-feat-cards);
+}
+.icn-map {
+  @include sprite($spr-contact-map);
+}
+.icn-cphone {
+  @include sprite($spr-contact-phone);
+}
+.icn-fb {
+  @include sprite($spr-social-fb);
+}
+.icn-tw {
+  @include sprite($spr-social-tw);
+}
+.icn-is {
+  @include sprite($spr-social-is);
+}
+.icn-gl {
+  @include sprite($spr-social-gl);
+}
+.icn-yt {
+  @include sprite($spr-social-yt);
+}
+.icn-arr-navup {
+  @include sprite($spr-arr-navup);
+}
+.icn-arr-navdown {
+  @include sprite($spr-arr-navdown);
+}

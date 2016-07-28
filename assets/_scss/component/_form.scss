@@ -1,0 +1,100 @@
+/*  
+  INPUT
+*/
+#{$all-text-inputs} {
+  border: none;
+  padding: 10px;
+  color: $base-color;
+  border: 1px solid $white;
+  @include transition(all 0.3s ease-in-out);
+
+  &:focus {
+    outline: none;
+    border: 1px solid darken($shade-green-color,10%);
+    box-shadow: 1px 1px 10px lighten($shade-green-color,10%);
+  }
+}
+
+input[type='submit'] {
+  border: none;
+  padding: 10px 60px;
+  background: $base-color;
+  border-radius: 5px;
+  @include transition(all 0.3s ease-in-out);
+
+  &:hover {
+    background: lighten($base-color,5%);
+  }
+}
+
+/*  
+  FORMS
+*/
+.form-contact {
+  margin-top: 10%;
+
+  span {
+    color: $white;
+    display: block;
+    font-style: italic;
+    @include font-size(15);
+    margin-bottom: 5px;
+  }
+  input,
+  textarea {
+    width: 100%;
+  }
+  textarea {
+    color: $base-color;
+    min-height: 70px;
+    max-height: 400px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type='submit'] {
+    width: auto;
+    margin: 0 auto;
+    float: right;
+    text-transform: uppercase;
+    @include font-size(20);    
+  }
+}
+
+.form-newsletter {
+
+  input[type='email'] {
+    width: 210px;
+    color: $white;
+    font-weight: 300;
+    background: transparent;
+    display: block;
+    float: left;
+    border: 1px solid darken($border-color,20%);
+
+    &:focus {
+      border: 1px solid darken($border-color,20%);
+      box-shadow: none;
+    }
+  }
+  input[type='submit'] {
+    width: 83px;
+    display: block;
+    float: left;
+    padding: 11px 0;
+    color: $white;
+    background: $shade-blue-color;
+    border-radius: 0;
+    text-align: center;
+    margin-left: -1px;  
+
+    &:hover {
+      background: lighten($shade-blue-color,5%);
+    }  
+  }
+  .single-input {
+    width: 100%;
+    @include clearfix();
+  }
+}

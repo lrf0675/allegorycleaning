@@ -1,0 +1,76 @@
+/*  
+  Fallback when Google font is unavailable
+*/
+// @include font-face('Open Sans', '../fonts/', normal);
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $site-font-2;
+  font-weight: normal;
+  position: relative;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+
+  &.heading-blue {
+    color: $shade-blue-color;
+  }
+  &.heading-green {
+    color: lighten($shade-green-color,10%);
+  }
+  &.heading-white {
+    color: $white;
+  }
+
+  &.heading-right {
+    text-align: right;
+
+    [class*='arr-'] {
+      left: -10%;
+      margin: 0;
+    }
+  }
+}
+
+h1 {
+  @include font-size(75);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.5;
+}
+
+h2 {
+  @include font-size(34);
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+h3 {
+  @include font-size(24);
+  font-weight: 300;
+  line-height: 4.5;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+a:hover, a:active {
+  @include transition(all 0.3s ease-in-out);
+}
+
+p {
+  color: lighten($black,30%);
+  line-height: 1.8;
+  font-weight: 300;
+
+  strong {
+    font-weight: 500;
+  }
+}

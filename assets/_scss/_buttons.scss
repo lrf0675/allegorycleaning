@@ -1,0 +1,119 @@
+.btn {
+  @include transition(all 0.3s ease-in-out);
+  @include border-radius(10px);
+  text-transform: capitalize;
+
+    @include media($lg-screen) {
+      @include border-radius(20px);
+    }
+
+  [class*='icn-'] {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+/*
+  COLORS
+*/
+.btn-green {
+  color: $white;
+  @include linear-gradient(lighten($shade-green-color,10%), $shade-green-color, darken($shade-green-color,10%));
+
+  &:hover {
+    @include linear-gradient(lighten($shade-green-color,12%), lighten($shade-green-color,2%), darken($shade-green-color,12%));
+  }
+}
+.btn-blue {
+  color: $white;
+  @include linear-gradient(lighten($shade-lameblue-color,20%), $shade-lameblue-color, darken($shade-lameblue-color,15%));
+
+  &:hover {
+    @include linear-gradient(lighten($shade-lameblue-color,22%), lighten($shade-lameblue-color,2%), darken($shade-lameblue-color,17%));
+  }
+}
+.btn-gray {
+  color: $white;
+  @include linear-gradient(lighten($base-color,10%), lighten($base-color,5%), darken($base-color,5%));
+
+  &:hover {
+    @include linear-gradient(lighten($base-color,12%), lighten($base-color,7%), darken($base-color,7%));
+  }
+}
+
+/*
+  SIZES
+*/
+.btn-lg {
+  @include font-size(14);
+  font-family: $site-font;
+  padding: 5px 20px 5px 0;
+
+  @include media($md-screen) {
+    @include font-size(16);
+    padding: 8px 20px 10px 10px;
+  }
+
+  @include media($lg-screen) {
+    @include font-size(19);
+    padding: 10px 40px 12px;
+  }
+}
+.btn-md {
+  @include font-size(19);
+  padding: 10px 60px;
+}
+
+/*
+  BUTTON GROUP
+*/
+.btn-grp {
+  margin: 0;
+
+  .btn {
+    margin: 10px;
+    @include font-size(14);
+    display: block;
+    text-align: center;
+  }
+  @include media($sm-landscape) {
+    .btn {
+      display: inline-block;
+    }
+  }
+  @include media($md-screen) {
+    margin: 0 auto;
+    text-align: center;
+
+    .btn {
+      @include font-size(16);
+      display: inline-block;
+    }
+  }
+  @include media($lg-screen) {
+    margin: 0 auto;
+    text-align: center;
+
+    .btn {
+      margin: 0 40px;
+      display: inline-block;
+      @include font-size(18);
+    }
+  }
+}
+
+/*
+  WITH ICONS
+*/
+.btn {
+  span[class*='icn-'] {
+    @include transform(scale(0.7));
+    height: 40px;
+    margin-top: -10px;
+  }
+  @include media($lg-screen) {
+    span[class*='icn-'] {
+      @include transform(scale(1));
+    }
+  }
+}

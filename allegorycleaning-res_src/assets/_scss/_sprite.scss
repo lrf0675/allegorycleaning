@@ -1,0 +1,246 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$spr-arr-navdown-name: 'spr-arr-navdown';
+$spr-arr-navdown-x: 50px;
+$spr-arr-navdown-y: 0px;
+$spr-arr-navdown-offset-x: -50px;
+$spr-arr-navdown-offset-y: 0px;
+$spr-arr-navdown-width: 50px;
+$spr-arr-navdown-height: 50px;
+$spr-arr-navdown-total-width: 200px;
+$spr-arr-navdown-total-height: 198px;
+$spr-arr-navdown-image: '../img/sprite.png';
+$spr-arr-navdown: (50px, 0px, -50px, 0px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-arr-navdown', );
+$spr-arr-navup-name: 'spr-arr-navup';
+$spr-arr-navup-x: 100px;
+$spr-arr-navup-y: 100px;
+$spr-arr-navup-offset-x: -100px;
+$spr-arr-navup-offset-y: -100px;
+$spr-arr-navup-width: 50px;
+$spr-arr-navup-height: 50px;
+$spr-arr-navup-total-width: 200px;
+$spr-arr-navup-total-height: 198px;
+$spr-arr-navup-image: '../img/sprite.png';
+$spr-arr-navup: (100px, 100px, -100px, -100px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-arr-navup', );
+$spr-contact-map-name: 'spr-contact-map';
+$spr-contact-map-x: 0px;
+$spr-contact-map-y: 50px;
+$spr-contact-map-offset-x: 0px;
+$spr-contact-map-offset-y: -50px;
+$spr-contact-map-width: 50px;
+$spr-contact-map-height: 50px;
+$spr-contact-map-total-width: 200px;
+$spr-contact-map-total-height: 198px;
+$spr-contact-map-image: '../img/sprite.png';
+$spr-contact-map: (0px, 50px, 0px, -50px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-contact-map', );
+$spr-contact-phone-name: 'spr-contact-phone';
+$spr-contact-phone-x: 50px;
+$spr-contact-phone-y: 50px;
+$spr-contact-phone-offset-x: -50px;
+$spr-contact-phone-offset-y: -50px;
+$spr-contact-phone-width: 50px;
+$spr-contact-phone-height: 50px;
+$spr-contact-phone-total-width: 200px;
+$spr-contact-phone-total-height: 198px;
+$spr-contact-phone-image: '../img/sprite.png';
+$spr-contact-phone: (50px, 50px, -50px, -50px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-contact-phone', );
+$spr-feat-cards-name: 'spr-feat-cards';
+$spr-feat-cards-x: 100px;
+$spr-feat-cards-y: 0px;
+$spr-feat-cards-offset-x: -100px;
+$spr-feat-cards-offset-y: 0px;
+$spr-feat-cards-width: 50px;
+$spr-feat-cards-height: 50px;
+$spr-feat-cards-total-width: 200px;
+$spr-feat-cards-total-height: 198px;
+$spr-feat-cards-image: '../img/sprite.png';
+$spr-feat-cards: (100px, 0px, -100px, 0px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-feat-cards', );
+$spr-feat-homesearch-name: 'spr-feat-homesearch';
+$spr-feat-homesearch-x: 100px;
+$spr-feat-homesearch-y: 50px;
+$spr-feat-homesearch-offset-x: -100px;
+$spr-feat-homesearch-offset-y: -50px;
+$spr-feat-homesearch-width: 50px;
+$spr-feat-homesearch-height: 50px;
+$spr-feat-homesearch-total-width: 200px;
+$spr-feat-homesearch-total-height: 198px;
+$spr-feat-homesearch-image: '../img/sprite.png';
+$spr-feat-homesearch: (100px, 50px, -100px, -50px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-feat-homesearch', );
+$spr-nav-building-name: 'spr-nav-building';
+$spr-nav-building-x: 0px;
+$spr-nav-building-y: 100px;
+$spr-nav-building-offset-x: 0px;
+$spr-nav-building-offset-y: -100px;
+$spr-nav-building-width: 50px;
+$spr-nav-building-height: 50px;
+$spr-nav-building-total-width: 200px;
+$spr-nav-building-total-height: 198px;
+$spr-nav-building-image: '../img/sprite.png';
+$spr-nav-building: (0px, 100px, 0px, -100px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-nav-building', );
+$spr-nav-calendar-name: 'spr-nav-calendar';
+$spr-nav-calendar-x: 50px;
+$spr-nav-calendar-y: 100px;
+$spr-nav-calendar-offset-x: -50px;
+$spr-nav-calendar-offset-y: -100px;
+$spr-nav-calendar-width: 50px;
+$spr-nav-calendar-height: 50px;
+$spr-nav-calendar-total-width: 200px;
+$spr-nav-calendar-total-height: 198px;
+$spr-nav-calendar-image: '../img/sprite.png';
+$spr-nav-calendar: (50px, 100px, -50px, -100px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-nav-calendar', );
+$spr-nav-cleaner-name: 'spr-nav-cleaner';
+$spr-nav-cleaner-x: 0px;
+$spr-nav-cleaner-y: 0px;
+$spr-nav-cleaner-offset-x: 0px;
+$spr-nav-cleaner-offset-y: 0px;
+$spr-nav-cleaner-width: 50px;
+$spr-nav-cleaner-height: 50px;
+$spr-nav-cleaner-total-width: 200px;
+$spr-nav-cleaner-total-height: 198px;
+$spr-nav-cleaner-image: '../img/sprite.png';
+$spr-nav-cleaner: (0px, 0px, 0px, 0px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-nav-cleaner', );
+$spr-nav-home-name: 'spr-nav-home';
+$spr-nav-home-x: 150px;
+$spr-nav-home-y: 0px;
+$spr-nav-home-offset-x: -150px;
+$spr-nav-home-offset-y: 0px;
+$spr-nav-home-width: 50px;
+$spr-nav-home-height: 50px;
+$spr-nav-home-total-width: 200px;
+$spr-nav-home-total-height: 198px;
+$spr-nav-home-image: '../img/sprite.png';
+$spr-nav-home: (150px, 0px, -150px, 0px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-nav-home', );
+$spr-nav-phone-name: 'spr-nav-phone';
+$spr-nav-phone-x: 150px;
+$spr-nav-phone-y: 50px;
+$spr-nav-phone-offset-x: -150px;
+$spr-nav-phone-offset-y: -50px;
+$spr-nav-phone-width: 50px;
+$spr-nav-phone-height: 50px;
+$spr-nav-phone-total-width: 200px;
+$spr-nav-phone-total-height: 198px;
+$spr-nav-phone-image: '../img/sprite.png';
+$spr-nav-phone: (150px, 50px, -150px, -50px, 50px, 50px, 200px, 198px, '../img/sprite.png', 'spr-nav-phone', );
+$spr-social-fb-name: 'spr-social-fb';
+$spr-social-fb-x: 150px;
+$spr-social-fb-y: 100px;
+$spr-social-fb-offset-x: -150px;
+$spr-social-fb-offset-y: -100px;
+$spr-social-fb-width: 48px;
+$spr-social-fb-height: 48px;
+$spr-social-fb-total-width: 200px;
+$spr-social-fb-total-height: 198px;
+$spr-social-fb-image: '../img/sprite.png';
+$spr-social-fb: (150px, 100px, -150px, -100px, 48px, 48px, 200px, 198px, '../img/sprite.png', 'spr-social-fb', );
+$spr-social-gl-name: 'spr-social-gl';
+$spr-social-gl-x: 0px;
+$spr-social-gl-y: 150px;
+$spr-social-gl-offset-x: 0px;
+$spr-social-gl-offset-y: -150px;
+$spr-social-gl-width: 48px;
+$spr-social-gl-height: 48px;
+$spr-social-gl-total-width: 200px;
+$spr-social-gl-total-height: 198px;
+$spr-social-gl-image: '../img/sprite.png';
+$spr-social-gl: (0px, 150px, 0px, -150px, 48px, 48px, 200px, 198px, '../img/sprite.png', 'spr-social-gl', );
+$spr-social-is-name: 'spr-social-is';
+$spr-social-is-x: 48px;
+$spr-social-is-y: 150px;
+$spr-social-is-offset-x: -48px;
+$spr-social-is-offset-y: -150px;
+$spr-social-is-width: 48px;
+$spr-social-is-height: 48px;
+$spr-social-is-total-width: 200px;
+$spr-social-is-total-height: 198px;
+$spr-social-is-image: '../img/sprite.png';
+$spr-social-is: (48px, 150px, -48px, -150px, 48px, 48px, 200px, 198px, '../img/sprite.png', 'spr-social-is', );
+$spr-social-tw-name: 'spr-social-tw';
+$spr-social-tw-x: 96px;
+$spr-social-tw-y: 150px;
+$spr-social-tw-offset-x: -96px;
+$spr-social-tw-offset-y: -150px;
+$spr-social-tw-width: 48px;
+$spr-social-tw-height: 48px;
+$spr-social-tw-total-width: 200px;
+$spr-social-tw-total-height: 198px;
+$spr-social-tw-image: '../img/sprite.png';
+$spr-social-tw: (96px, 150px, -96px, -150px, 48px, 48px, 200px, 198px, '../img/sprite.png', 'spr-social-tw', );
+$spr-social-yt-name: 'spr-social-yt';
+$spr-social-yt-x: 144px;
+$spr-social-yt-y: 150px;
+$spr-social-yt-offset-x: -144px;
+$spr-social-yt-offset-y: -150px;
+$spr-social-yt-width: 48px;
+$spr-social-yt-height: 48px;
+$spr-social-yt-total-width: 200px;
+$spr-social-yt-total-height: 198px;
+$spr-social-yt-image: '../img/sprite.png';
+$spr-social-yt: (144px, 150px, -144px, -150px, 48px, 48px, 200px, 198px, '../img/sprite.png', 'spr-social-yt', );
+$spritesheet-width: 200px;
+$spritesheet-height: 198px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($spr-arr-navdown, $spr-arr-navup, $spr-contact-map, $spr-contact-phone, $spr-feat-cards, $spr-feat-homesearch, $spr-nav-building, $spr-nav-calendar, $spr-nav-cleaner, $spr-nav-home, $spr-nav-phone, $spr-social-fb, $spr-social-gl, $spr-social-is, $spr-social-tw, $spr-social-yt, );
+$spritesheet: (200px, 198px, '../img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

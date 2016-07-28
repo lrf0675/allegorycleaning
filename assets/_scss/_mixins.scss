@@ -1,0 +1,21 @@
+/*  
+  Font size REM with fallback PX
+*/
+
+@mixin font-size($size) {
+  font-size: ($size) + px;
+  font-size: ($size / 16) + rem;
+}
+
+/*  
+  PREFIXER
+*/
+@mixin border-radius($size) {
+  @include prefixer(border-radius, $size, webkit moz spec);
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

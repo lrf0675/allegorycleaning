@@ -1,0 +1,19 @@
+@import '../../bower_components/neat/app/assets/stylesheets/neat-helpers';
+
+// Change the grid settings
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: 1280px;
+
+// Standard breakpoints
+$md-value: 640;
+$lg-value: 1024;
+
+$md-screen:  new-breakpoint(min-width $md-value 8);
+$lg-screen:  new-breakpoint(min-width $lg-value+1 12);
+
+// $visual-grid: true;
+// $visual-grid-color: red;
+// $visual-grid-index: front;
+// $visual-grid-opacity: 0.5;

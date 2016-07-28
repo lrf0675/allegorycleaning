@@ -1,0 +1,252 @@
+/*
+  ARROWS
+*/
+.arr-blue {
+  display: block;
+  background: $shade-blue-color;
+  height: 2px;
+  margin: 10px 0;
+
+  @include media($md-screen) {
+    top: 2px;
+    display: inline-block;
+    height: 14px;
+    width: 250px;
+    position: absolute;
+    margin: 0;
+    margin-left: 10px;
+    background: url('../img/arr-blue.png') center center no-repeat;
+  }
+
+  @include media($lg-screen) {
+    top: 18px;
+    display: inline-block;
+    height: 14px;
+    width: 250px;
+    position: absolute;
+    margin: 0;
+    margin-left: 10px;
+    background: url('../img/arr-blue.png') center center no-repeat;
+  }
+}
+.arr-green {
+  display: block;
+  background: $shade-green-color;
+  height: 2px;
+  margin: 10px 0;
+
+  @include media($md-screen) {
+    height: 14px;
+    width: 250px;
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: -220px !important;
+    margin-left: 10px;
+    background: url('../img/arr-green.png') center center no-repeat;
+  }
+
+  @include media($md-landscape) {
+    left: -100px !important;
+  }
+
+  @include media($lg-screen) {
+    height: 14px;
+    width: 250px;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    margin-left: 10px;
+    background: url('../img/arr-green.png') center center no-repeat;
+  }
+}
+
+/*
+  LISTS
+*/
+.list-vertical {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  vertical-align: top;
+  list-style-type: none;
+  text-align: left;
+}
+
+/*
+  SOCIAL
+*/
+.social {
+  padding: 0;
+  list-style-type: none;
+  @include clearfix();
+  margin-top: 50px;
+
+  li {
+    display: inline;
+    margin: auto;
+  }
+
+  a, a:visited {
+    float: left;
+    display: block;
+    margin: 0 5px;;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+/*
+  SLIDER
+*/
+.box-quote {
+
+  padding: 30px 10px;
+  text-align: center;
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px rgba($base-color,0.5);
+  margin-bottom: 50px;
+  position: relative;
+  @include span-columns(4);
+
+  @include media($md-screen) {
+    @include span-columns(8);
+    margin-bottom: 80px;
+  }
+  @include media($lg-screen) {
+    @include span-columns(12);
+    padding: 20px 50px 10px;
+    margin-bottom: 150px;
+  }
+
+  .slider-texts {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  img {
+    float: left;
+    width: 140px;
+    display: block;
+
+    @include media($sm-landscape) {
+      float: none;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  p {
+    float: left;
+    width: 80%;
+    display: block;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 0;
+    font-size: em(14);
+    text-align: left;
+
+    @include media($md-screen) {
+      width: 70%;
+      margin-left: 30px;
+      font-size: em(16);
+    }
+    @include media($md-landscape) {
+      width: 70%;
+      margin-left: 30px;
+      font-size: em(16);
+    }
+    @include media($lg-screen) {
+      width: 80%;
+      margin-left: 30px;
+      font-size: em(16);
+    }
+  }
+  small {
+    margin-top: 20px;
+    font-weight: 500;
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    color: $shade-green-color;
+    @include font-size(14);
+    line-height: 1.5;
+
+    @include media($lg-screen) {
+      @include font-size(16);
+      line-height: 3.5;
+    }
+  }
+  em {
+    font-style: normal;
+    color: $base-color;
+  }
+  .bx-pager {
+    top: 0;
+    right: 17px;
+    position: absolute;
+    margin-top: 50%;
+    z-index: 0;
+
+    @include media($sm-landscape) {
+      top: 0;
+      margin-top: 20%;
+    }
+    @include media($md-screen) {
+      right: 17px;
+      top: 30%;
+      margin: 0;
+    }
+    @include media($md-landscape) {
+      right: 17px;
+      top: 30%;
+      margin-top: 0;
+    }
+    @include media($lg-screen) {
+      right: 17px;
+      top: 30%;
+      margin: 0;
+    }
+  }
+  .bx-pager a {
+    display: block;
+    text-indent: -9999px;
+    height: 15px;
+    width: 15px;
+    background: $base-color;
+    border-radius: 30px;
+    margin: 6px 0;
+  }
+  .bx-pager-link.active {
+    background: $shade-blue-color;
+  }
+  .bx-controls-direction {
+    // position: absolute;
+    // z-index: 1;
+  }
+  .bx-prev {
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-indent: -9999px;
+    @extend .icn-arr-navup;
+
+      @include media($lg-screen) {
+        right: 0;
+      }
+  }
+  .bx-next {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    text-indent: -9999px;
+    @extend .icn-arr-navdown;
+
+      @include media($lg-screen) {
+        right: 0; 
+        bottom: 0;
+      }
+  }
+}

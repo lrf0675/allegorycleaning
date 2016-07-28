@@ -1,0 +1,137 @@
+/*
+  ARROWS
+*/
+.arr-blue {
+  height: 14px;
+  width: 250px;
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  margin-left: 10px;
+  background: url('../img/arr-blue.png') center center no-repeat;
+}
+.arr-green {
+  height: 14px;
+  width: 250px;
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  margin-left: 10px;
+  background: url('../img/arr-green.png') center center no-repeat;
+}
+
+/*
+  LISTS
+*/
+.list-vertical {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  vertical-align: top;
+  list-style-type: none;
+  text-align: left;
+}
+
+/*
+  SOCIAL
+*/
+.social {
+  padding: 0;
+  list-style-type: none;
+  @include clearfix();
+  margin-top: 50px;
+
+  li {
+    display: inline;
+    margin: auto;
+  }
+
+  a, a:visited {
+    float: left;
+    display: block;
+    margin: 0 5px;;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+/*
+  SLIDER
+*/
+.box-quote {
+
+  padding: 20px 50px 10px;
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px rgba($base-color,0.5);
+  margin-bottom: 150px;
+  // @include clearfix();
+  @include span-columns(12);
+  // @include shift(1);
+  position: relative;
+
+  .slider-texts {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  img {
+    float: left;
+    width: 140px;
+    display: block;
+  }
+  p {
+    float: left;
+    width: 80%;
+    display: block;
+    margin-left: 30px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  small {
+    margin-top: 20px;
+    font-weight: 500;
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    color: $shade-green-color;
+    @include font-size(16);
+  }
+  em {
+    font-style: normal;
+    color: $base-color;
+  }
+  .bx-pager {
+    top: 3em;
+    right: 17px;
+    position: absolute;
+  }
+  .bx-pager a {
+    display: block;
+    text-indent: -9999px;
+    height: 15px;
+    width: 15px;
+    background: $base-color;
+    border-radius: 30px;
+    margin: 6px 0;
+  }
+  .bx-pager .pager-active {
+    background: $shade-blue-color;
+  }
+  .bx-prev {
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-indent: -9999px;
+    @extend .icn-arr-navup;
+  }
+  .bx-next {
+    right: 0;
+    bottom: 20px;
+    position: absolute;
+    text-indent: -9999px;
+    @extend .icn-arr-navdown;
+  }
+}

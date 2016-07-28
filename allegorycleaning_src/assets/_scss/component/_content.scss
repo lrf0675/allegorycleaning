@@ -1,0 +1,86 @@
+/*  
+  CONTENT BLOCKS
+*/
+.content-onwhite,
+.content-onblue,
+.content-ongray { 
+  h1 {
+    text-align: center;
+  }
+}
+
+.content-onblue {  
+  & *{
+    color: $white;
+  }
+  .paragraph-centered {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    
+    p:last-of-type {
+      margin-bottom: 10%;
+    }    
+  }
+}
+
+.content-ongray {
+  background: darken($white,5%);  
+}
+
+.content-ongreen {
+  background-color: $shade-green-color;
+
+  & *{
+    color: $white;
+    z-index: 7;
+  }
+  .content-details {
+    font-family: $site-font-2;
+    margin-bottom: 30px;
+    @include clearfix();
+
+    span { 
+      float: left;
+      margin-right: 20px;
+      display: block;
+      position: relative;
+    }
+  }
+  .content-details-md {
+    @extend .content-details;
+    @include font-size(20);
+  }
+  .content-details-lg {
+    @extend .content-details;
+    @include font-size(40);
+    font-weight: 500;
+  }
+}
+
+.content-background {
+  position: relative;
+  max-height: 750px;
+  height: 750px;
+  background: transparent; 
+}
+
+.content-background-slim {
+  @extend .content-background;
+  max-height: 463px;
+  height: 463px;
+}
+
+.content-img {
+  position: relative;
+
+  img {
+    top: -80px;
+    position: relative;
+  }
+
+  &.content-img-right {
+    text-align: right;
+  }
+}
+

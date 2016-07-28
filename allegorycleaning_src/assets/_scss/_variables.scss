@@ -1,0 +1,35 @@
+// Typography
+$site-font: 'Open Sans';
+$site-font-2: 'Raleway';
+
+$sans-serif: $helvetica;
+$serif: $georgia;
+$base-font-family: $site-font, $sans-serif;
+$header-font-family: $site-font-2;
+
+// Font Sizes
+$base-font-size: 1em;
+$h1-font-size: $base-font-size * 2.20;
+$h2-font-size: $base-font-size * 1.75;
+$h3-font-size: $base-font-size * 1.25;
+$h4-font-size: $base-font-size * 1.4;
+$h5-font-size: $base-font-size * 1.25;
+$h6-font-size: $base-font-size;
+
+$base-line-height: 1.8;
+
+// Colors
+$white: #fff;
+$black: #000;
+
+$base-color: #424242;
+$shade-blue-color: #0d69a9;
+$shade-green-color: #69992f;
+$shade-lameblue-color: #3287b5;
+
+// Borders
+$border-color: #a9a9a9;
+
+// Z-index
+$zindex-feat: 1;
+$zindex-nav: 10;

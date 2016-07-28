@@ -1,0 +1,63 @@
+.btn {
+  @include transition(all 0.3s ease-in-out);
+  @include border-radius(20px);
+  text-transform: capitalize;
+
+  [class*='icn-'] {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+/*
+  COLORS
+*/
+.btn-green {
+  color: $white;
+  @include linear-gradient(lighten($shade-green-color,10%), $shade-green-color, darken($shade-green-color,10%));
+
+  &:hover {
+    @include linear-gradient(lighten($shade-green-color,12%), lighten($shade-green-color,2%), darken($shade-green-color,12%));
+  }
+}
+.btn-blue {
+  color: $white;
+  @include linear-gradient(lighten($shade-lameblue-color,20%), $shade-lameblue-color, darken($shade-lameblue-color,15%));
+
+  &:hover {
+    @include linear-gradient(lighten($shade-lameblue-color,22%), lighten($shade-lameblue-color,2%), darken($shade-lameblue-color,17%));
+  }
+}
+.btn-gray {
+  color: $white;
+  @include linear-gradient(lighten($base-color,10%), lighten($base-color,5%), darken($base-color,5%));
+
+  &:hover {
+    @include linear-gradient(lighten($base-color,12%), lighten($base-color,7%), darken($base-color,7%));
+  }
+}
+
+/*
+  SIZES
+*/
+.btn-lg {
+  @include font-size(19);
+  font-family: $site-font;
+  padding: 10px 40px 12px;
+}
+.btn-md {
+  @include font-size(19);
+  padding: 10px 60px;
+}
+
+/*
+  BUTTON GROUP
+*/
+.btn-grp {
+  margin: 20px 0;
+
+  .btn {
+    margin: 0 40px;
+  }
+}
